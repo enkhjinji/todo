@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 300px;
+        height: 300px;
+        background-color: brown;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      } 
+      .container .head {
+        width: 80%;
+        height: 40px;
+        justify-content: space-between;
+      }
+      .text {
+        width: 100%;
+        background-color: darksalmon;
+        color: snow;
+      }
+      .check {
+        text-decoration: line-through;
+      }
+    </style>
+
+    <div class="container">
+      <div class="head">
+        <input type="text" id="Todoin" />
+        <button id="add">add</button>
+      </div>
+      <div class="lists"></div>
+    </div>
+    <script src="app2.js"></script>
+  </body>
+</html>
